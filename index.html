@@ -1,34 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Your Name</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 20px 10%;
+            border-bottom: 1px solid #222;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        section {
+            padding: 80px 10%;
+            max-width: 900px;
+        }
+
+        section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        section p {
+            color: #bbb;
+            max-width: 600px;
+        }
+
+        .downloads a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #444;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .downloads a:hover {
+            background-color: #111;
+            border-color: #888;
+        }
+
+        footer {
+            padding: 30px 10%;
+            border-top: 1px solid #222;
+            color: #666;
+            font-size: 13px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body class="page">
+<body>
 
+<header>
+    <h1>Moon Light</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#downloads">Downloads</a>
+    </nav>
+</header>
 
-
-
-  <nav class="nav fade-down">
-    <a href="index.html" class="logo">YourName</a>
-
-    <div class="nav-right">
-      <a href="index.html" class="active">About</a>
-      <a href="downloads.html">Downloads</a>
-      <button id="theme-toggle" aria-label="Toggle theme">☾</button>
-    </div>
-  </nav>
-
-  <main class="hero fade-up">
-    <h1>Hi, I’m <span>Your Name</span></h1>
+<section id="about">
+    <h2>About Me</h2>
     <p>
-      I make clean, minimal things for the web.
-      This is my small corner of the internet.
+        Hello. I'm a developer passionate about creating clean and efficient projects.
+        I enjoy building minimal, functional designs and constantly improving my skills.
     </p>
-  </main>
+</section>
 
-  <script src="script.js"></script>
+<section id="downloads" class="downloads">
+    <h2>Downloads</h2>
+    <p>
+        Here are some of my available files and projects.
+    </p>
+
+    <a href="#">Download Project 1</a><br>
+    <a href="#">Download Project 2</a>
+</section>
+
+<footer>
+    © 2026 Moon Light. All rights reserved.
+</footer>
+
 </body>
 </html>
 
